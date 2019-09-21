@@ -32,32 +32,35 @@
         android:layout_centerHorizontal="true"/>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="385dp"
+        android:layout_height="205dp"
         android:layout_below="@+id/priceLabel"
-        android:gravity="center_vertical|center_horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/base"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:id="@+id/textView"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+        android:layout_marginTop="115dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
 
         <Spinner
+            android:id="@+id/currency_spinner"
+            android:layout_width="140dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:dropDownSelector="@color/fontColour"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/currency_spinner"
-            android:gravity="center_horizontal"
-            android:spinnerMode="dropdown"
-            android:dropDownSelector="@color/fontColour"
-            />
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="20dp"
+            android:text="@string/base"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
